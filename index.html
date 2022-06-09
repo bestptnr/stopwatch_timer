@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clock</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        #timeDisplay,#timerDisplay{
+            font-size: 1000%;
+        }
+        @media screen  and (max-width:800px){
+            #timeDisplay,#timerDisplay{
+            font-size: 300%;
+        }
+        }
+    </style>
+ 
+</head>
+  <body>
+    <div class="container">
+        <h1 class="text-center mt-3">StopWatch</h1>
+        <div class="p-5 text-bg-success">
+            <div id="timeDisplay" class="text-center">00:00:00</div>
+            <div class="text-center">
+                <div class="btn btn-dark" id="btnstart">Start</div>
+                <div class="btn btn-dark" id="Stop">Stop</div>
+                <div class="btn btn-dark" id="Reset">Reset</div>
+            </div>
+        </div>
+        <h1 class="text-center mt-3">TimerWatch</h1>
+        <div class="p-5 text-bg-danger">
+            <div class="text-center">
+                <div id="timerDisplay" class="text-center">00:00:00</div>
+                <div class="btn btn-dark" id="timerstart">Start</div>
+                <div class="btn btn-dark" id="timerstop">Stop</div>
+                <div class="btn btn-dark" id="timerreset">Reset</div>
+                <div class="btn btn-dark" id="setTime">SetTime</div>
+
+            </div>
+        </div>
+    </div>
+    <script src="clock.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
